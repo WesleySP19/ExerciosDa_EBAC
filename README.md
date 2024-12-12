@@ -18,5 +18,5 @@ O objetivo deste repositório é consolidar e compartilhar todo o conhecimento a
       
     📂src           
   
-     📝HelloWorld            
+     📝HelloWorld.java            
        
