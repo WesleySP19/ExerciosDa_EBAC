@@ -12,4 +12,11 @@ O objetivo deste repositório é consolidar e compartilhar todo o conhecimento a
 - **Testes Automatizados**
 - **Integração Contínua**
 
-## 📂 Estrutura do Repositório
+## 📂 Estrutura do Repositório ##
+
+ 📂atividades_da_Ebac-01
+      
+    📂src           
+  
+     📝HelloWorld            
+       
