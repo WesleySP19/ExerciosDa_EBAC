@@ -1,0 +1,33 @@
+inicio
+    // Início da rotina
+    enquanto (hora < 8) faça // Supondo que o trabalho começa às 8h
+        se (hora = 4) então
+            escrever("Acordar!");
+        fimSe
+        
+        se (hora = 4.30) então
+            escrever("Fazer café.");
+            cafePronto := verdadeiro;
+        fimSe
+        
+        se (hora = 5) e (cafePronto = verdadeiro) então
+            escrever("Ir para a academia.");
+            estaNaAcademia := verdadeiro;
+        fimSe
+        
+        se (hora = 6) e (estaNaAcademia = verdadeiro) então
+            escrever("Voltar da academia e tomar café.");
+            estaNaAcademia := falso;
+        fimSe
+        
+        se (hora = 7) então
+            escrever("Preparar-se para o trabalho.");
+        fimSe
+        
+        // Simular o passar do tempo (pode ser substituído por um relógio real)
+        hora := hora + 0.5; // Aumenta a hora em 30 minutos
+    fimEnquanto
+
+    escrever("Iniciar o trabalho.");
+    trabalhoIniciado := verdadeiro;
+fim
