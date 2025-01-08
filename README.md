@@ -1,5 +1,7 @@
 # 🚀 Exercícios do Curso de Especialista em Back-end da EBAC
 
+## Olá,
+
 Bem-vindo ao meu repositório de exercícios! Aqui você encontrará uma coleção de projetos e exercícios práticos desenvolvidos durante meu curso de Especialista em Back-end na [EBAC](https://ebac.art.br/).
 
 ## 🎯 Objetivo do Repositório
