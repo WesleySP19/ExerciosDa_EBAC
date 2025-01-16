@@ -6,9 +6,8 @@ public class Aluno {
 
     public Aluno(String nome) {
         this.nome = nome;
-        this.notas = new double[4];
+        this.notas = new double[4]; 
     }
-
 
     public void lerNotas() {
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +17,7 @@ public class Aluno {
         }
     }
 
-
+  
     public double calcularMedia() {
         double soma = 0;
         for (double nota : notas) {
@@ -27,37 +26,37 @@ public class Aluno {
         return soma / notas.length;
     }
 
-
+   
     public void verificarSituacao() {
         double media = calcularMedia();
         System.out.println("Média do aluno " + nome + ": " + media);
 
         if (media >= 7) {
-            System.out.println(nome + " está APROVADO!");
+            System.out.println(nome + " está APROVADO! 😀");
         } else if (media >= 5) {
-            System.out.println(nome + " está em RECUPERAÇÃO!");
+            System.out.println(nome + " está em RECUPERAÇÃO! 😕");
         } else {
-            System.out.println(nome + " está REPROVADO!");
+            System.out.println(nome + " está REPROVADO! 😞");
         }
     }
 
-
+ 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-
-        System.out.println("Nome do aluno: ");
+        
+        // Solicitar o nome do aluno
+        System.out.println("Digite o nome do aluno: ");
         String nomeAluno = scanner.nextLine();
-
-
+        
+        // Criar o objeto Aluno com o nome informado
         Aluno aluno = new Aluno(nomeAluno);
-
-
+        
+        // Ler as 4 notas do aluno
         aluno.lerNotas();
-
-
+        
+        // Verificar a situação do aluno com base na média
         aluno.verificarSituacao();
-
-        scanner.close();
+        
+        scanner.close(); // Fechar o scanner após o uso
     }
 }
